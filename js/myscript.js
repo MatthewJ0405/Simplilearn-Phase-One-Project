@@ -26,7 +26,7 @@ function newPost() {
     p.appendChild(bodyText);
 
     if (postTitle == '' || postBody == '') {
-        alert('Please input a Post Title and Post Body')
+        alert('Please input a Post Title and Post Body.')
     } else {
         postDiv.appendChild(h2);
         postDiv.appendChild(hr);
