@@ -1,0 +1,16 @@
+.navbar {
+    margin-bottom: 15px;
+}
+
+.none {
+    display: none;
+}
+
+hr {
+    border: 1px solid grey;
+}
+
+.top-text {
+    color: white;
+    font-size: 35px;
+}

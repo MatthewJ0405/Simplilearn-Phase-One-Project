@@ -6,23 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Blog</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mycss.css" rel="stylesheet">
+    <script src="js/myscript.js"></script>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <h1 class="top-text">Company Blog</h1>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <button type="button" class="btn btn-dark" onclick="openCreate()">Write Post</button>
+            </li>
+        </ul>
+    </nav>
     <div class="container">
-        <form action="">
-            <div class="form-group">
-                <label for="blogInput">Blog Title</label>
-                <input type="text" class="form-control" id="blogInput">
+        <div class="row" id="blogPosts">
+            <div class="col-md-8">
+                <h2 id="blogHeading">Nunc Feugiat Viverra Porta</h2>
+                <hr />
+                <p id="blogText">Duis erat ex, finibus vestibulum sem et, sollicitudin aliquet risus. Nunc feugiat viverra porta. In scelerisque enim vel nisl blandit gravida. Mauris tincidunt fringilla mattis. Vestibulum lobortis vitae magna a posuere. Duis sed vulputate ante, ac pulvinar arcu. Integer sit amet odio pharetra, laoreet lorem at, sagittis libero. Donec dignissim ac nisl vitae convallis. Ut auctor libero in leo laoreet dapibus. In sagittis, massa quis vehicula venenatis, diam arcu facilisis felis, a fermentum felis ipsum vel erat. Donec efficitur urna id purus aliquet, a ullamcorper nunc molestie. Quisque eget pulvinar quam, ac porttitor augue. Aenean ac mauris eu nibh efficitur pretium. Donec eget risus mi. Praesent auctor venenatis tincidunt.</p>
             </div>
-            <div class="form-group">
-                <label for="textarea1">Blog Body</label>
-                <textarea class="form-control" id="blogTextarea" rows="3"></textarea>
+            <div class="col-lg">
+                <form id="blogForm" class="none">
+                    <div class="form-group">
+                        <label for="blogInput">Post Title</label>
+                        <input type="text" class="form-control" id="postTitle">
+                    </div>
+                    <div class="form-group">
+                        <label for="textarea1">Post Body</label>
+                        <textarea class="form-control" id="postBody" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-dark" onclick="newPost()">Create Post</button>
+                </form>
             </div>
-            <button type="submit" class="btn btn-dark">Create Post</button>
-        </form>
+            <div class="col-md-8">
+                <h2 id="blogHeading">Aliquam ut Commodo Enim</h2>
+                <hr />
+                <p id="blogText">Aenean mauris sem, cursus id ullamcorper vehicula, fringilla a lacus. Suspendisse dignissim ultrices ex. Cras in dignissim turpis. Nullam ut tempus metus. Proin dapibus gravida ex. Nunc aliquet luctus nibh, vulputate euismod quam tincidunt gravida. Duis at felis mi. Aliquam tincidunt, leo non rhoncus imperdiet, erat neque viverra mauris, vitae consectetur est nulla vel tortor. Morbi lacinia dolor a lobortis aliquet. Ut eros urna, tempor sed turpis in, fermentum vulputate mi. Aenean a metus lobortis, molestie leo sed, elementum nunc. Nullam at quam id risus mattis luctus. Vestibulum quis quam nec purus vulputate dictum.</p>
+            </div>
+        </div>
     </div>
 
-</body>
 
-</html>
+</body></html>
