@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Blog</title>
+    <title>Ghostly - Home</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/mycss.css" rel="stylesheet">
-    <script src="js/myscript.js"></script>
+    <link href="css/mystyle.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <h1 class="top-text">Company Blog</h1>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <button type="button" class="btn btn-dark" onclick="openCreate()">Write Post</button>
-            </li>
-        </ul>
-    </nav>
     <div class="container">
-        <div class="row" id="blogPosts">
-            <div class="col-md-8">
-                <h2 id="blogHeading">Nunc Feugiat Viverra Porta</h2>
-                <hr />
-                <p id="blogText">Duis erat ex, finibus vestibulum sem et, sollicitudin aliquet risus. Nunc feugiat viverra porta. In scelerisque enim vel nisl blandit gravida. Mauris tincidunt fringilla mattis. Vestibulum lobortis vitae magna a posuere. Duis sed vulputate ante, ac pulvinar arcu. Integer sit amet odio pharetra, laoreet lorem at, sagittis libero. Donec dignissim ac nisl vitae convallis. Ut auctor libero in leo laoreet dapibus. In sagittis, massa quis vehicula venenatis, diam arcu facilisis felis, a fermentum felis ipsum vel erat. Donec efficitur urna id purus aliquet, a ullamcorper nunc molestie. Quisque eget pulvinar quam, ac porttitor augue. Aenean ac mauris eu nibh efficitur pretium. Donec eget risus mi. Praesent auctor venenatis tincidunt.</p>
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="index.html">Ghostly</a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                </div>
             </div>
-            <div class="col-lg">
-                <form id="blogForm" class="none">
-                    <div class="form-group">
-                        <label for="blogInput">Post Title</label>
-                        <input type="text" class="form-control" id="postTitle">
-                    </div>
-                    <div class="form-group">
-                        <label for="textarea1">Post Body</label>
-                        <textarea class="form-control" id="postBody" rows="3"></textarea>
-                    </div>
-                    <button type="button" class="btn btn-dark" onclick="newPost()">Create Post</button>
-                </form>
-            </div>
-            <div class="col-md-8">
-                <h2 id="blogHeading">Aliquam ut Commodo Enim</h2>
-                <hr />
-                <p id="blogText">Aenean mauris sem, cursus id ullamcorper vehicula, fringilla a lacus. Suspendisse dignissim ultrices ex. Cras in dignissim turpis. Nullam ut tempus metus. Proin dapibus gravida ex. Nunc aliquet luctus nibh, vulputate euismod quam tincidunt gravida. Duis at felis mi. Aliquam tincidunt, leo non rhoncus imperdiet, erat neque viverra mauris, vitae consectetur est nulla vel tortor. Morbi lacinia dolor a lobortis aliquet. Ut eros urna, tempor sed turpis in, fermentum vulputate mi. Aenean a metus lobortis, molestie leo sed, elementum nunc. Nullam at quam id risus mattis luctus. Vestibulum quis quam nec purus vulputate dictum.</p>
-            </div>
+        </header>
+
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-center">
+                <a class="p-2 text-muted" href="index.html">Home</a>
+                <a class="p-2 text-muted" href="about.html">About</a>
+                <a class="p-2 text-muted" href="blog.html">Blog</a>
+                <a class="p-2 text-muted" href="contact.html">Contact Us</a>
+            </nav>
         </div>
     </div>
 
+    <main role="main">
 
+        <!-- Main jumbotron -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">All things haunted. <span class="span-heading">Except not really.</span></h1>
+                <p>A ghost is the soul or spirit of a dead person or animal that can appear to the living. The overwhelming consensus of science is that there is no proof that ghosts exist. Their existence is impossible to falsify, and ghost hunting has been classified as pseudoscience. Despite centuries of investigation, there is no scientific evidence that any location is inhabited by spirits of the dead.</p>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>About</h2>
+                    <p>Ghosts are generally described as solitary, human-like essences, though stories of ghostly armies and the ghosts of animals rather than humans have also been recounted. They are believed to haunt particular locations, objects, or people they were associated with in life. <span class="span-important">Learn more about why we don't believe.</span></p>
+                    <p><a class="btn btn-secondary" href="about.html" role="button">Learn More &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Blog</h2>
+                    <p>Although the human soul was sometimes symbolically or literally depicted in ancient cultures as a bird or other animal, it appears to have been widely held that the soul was an exact reproduction of the body in every feature, even down to clothing the person wore. <span class="span-important">Visit the blog to read more on ghosts.</span></p>
+                    <p><a class="btn btn-secondary" href="blog.html" role="button">Visit Blog &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Contact</h2>
+                    <p>While deceased ancestors are universally regarded as venerable, and often believed to have a continued presence in some form of afterlife, the spirit of a deceased person that persists in the material world (a ghost) is regarded as an unnatural or undesirable state of affairs and the idea of ghosts or revenants is associated with a reaction of fear. <span class="span-important">While you may be afraid of ghosts, don't be afraid to contact us.</span></p>
+                    <p><a class="btn btn-secondary" href="contact.html" role="button">Contact Us &raquo;</a></p>
+                </div>
+            </div>
+
+            <hr>
+
+        </div>
+
+    </main>
 </body></html>

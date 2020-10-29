@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghostly - Blog</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mystyle.css" rel="stylesheet">
+    <script src="./js/myscript.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="index.html">Company</a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <button type="button" class="btn btn-dark" onclick="openCreate()">Write Post</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-center">
+                <a class="p-2 text-muted" href="index.html">Home</a>
+                <a class="p-2 text-muted" href="about.html">About</a>
+                <a class="p-2 text-muted" href="blog.html">Blog</a>
+                <a class="p-2 text-muted" href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 none" id="formDiv">
+                <form class="none" id="blogForm">
+                    <div class="form-group">
+                        <label for="blogInput">Post Title</label>
+                        <input type="text" class="form-control" id="postTitle">
+                    </div>
+                    <div class="form-group">
+                        <label for="textarea1">Post Body</label>
+                        <textarea class="form-control" id="postBody" rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-dark" onclick="newPost()">Create Post</button>
+                </form>
+            </div>
+        </div>
+        <div class="row" id="blogPosts">
+            <div class="col-md-8">
+                <h2 id="blogHeading">About Ghosts</h2>
+                <hr />
+                <p id="blogText">The sense of ghosts as invisible, mysterious entities is invoked in several terms that use the word metaphorically, such as ghostwriter (a writer who pens texts credited to another person without revealing the ghostwriter's role as an author); ghost singer (a vocalist who records songs whose vocals are credited to another person); and "ghosting" a date (when a person breaks off contact with a former romantic partner and disappears).
+
+                    In folklore, a ghost is the soul or spirit of a dead person or animal that can appear to the living. In ghostlore, descriptions of ghosts vary widely from an invisible presence to translucent or barely visible wispy shapes, to realistic, lifelike forms. The deliberate attempt to contact the spirit of a deceased person is known as necromancy, or in spiritism as a séance. Other terms associated with it are apparition, haunt, phantom, poltergeist, shade, specter or spectre, spirit, spook, and wraith.</p>
+            </div>
+            <div class="col-md-8">
+                <h2 id="blogHeading">Historical Ghosts</h2>
+                <hr />
+                <p id="blogText">Ghosts reported in medieval Europe tended to fall into two categories: the souls of the dead, or demons. The souls of the dead returned for a specific purpose. Demonic ghosts existed only to torment or tempt the living. The living could tell them apart by demanding their purpose in the name of Jesus Christ. The soul of a dead person would divulge its mission, while a demonic ghost would be banished at the sound of the Holy Name.
+
+                    Medieval European ghosts were more substantial than ghosts described in the Victorian age, and there are accounts of ghosts being wrestled with and physically restrained until a priest could arrive to hear its confession. Some were less solid, and could move through walls. Often they were described as paler and sadder versions of the person they had been while alive, and dressed in tattered gray rags. The vast majority of reported sightings were male.</p>
+            </div>
+        </div>
+    </div>
+
+
+</body></html>
